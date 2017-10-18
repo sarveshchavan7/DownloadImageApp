@@ -77,7 +77,6 @@ public class MyAsyncTask extends AsyncTask<String, Integer, Boolean> {
 
         if (activity != null) {
             progressValue = (int) (((double) values[0] / lengthOfFile) * 100);
-            Log.d("Progressfuck", String.valueOf((double) totalBytesRead));
             ((MainActivity) activity).updateProgress(progressValue);
         }
     }
